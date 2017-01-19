@@ -1,0 +1,47 @@
+'use strict';
+module.exports=function(grunt){
+    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt);
+    grunt.initConfig({
+        pkg:grunt.file.readJSON('package.json'),
+        version:grunt.template.today("mmddHHMM"),
+        sprite:{
+            filetype:{
+                src:['web/statics/images/icons/*.png'],
+                dest:'web/statics/images/icons-<%= version %>.png',
+                destCss:'web/statics/sass/_sprite.scss',
+                cssSpritesheetName:'icon',
+                paddding:5
+            }
+        },
+        clean:{
+            sprite:{
+                src:'web/statics/images/icons-*'
+            }
+        },
+        watch:{
+            sass:{
+                files:['web/statics/sass/**/*.scss'],
+                tasks:'sass:dev'
+            }
+        },
+        sass:{
+            options:{
+                sourcemap:'none',
+                noCache:true,
+                style:'expanded'
+            },
+            dev:{
+                files:[{
+                    expand:true,
+                    cwd:'web/statics/sass/',
+                    src:['**/*.scss'],
+                    dest:'web/statics/styles/',
+                    ext:'.css'
+                }]
+            }
+        }
+    });
+    grunt.registerTask('dev',['watch']);
+    grunt.registerTask('icons',['clean:sprite','sprite:filetype']);
+};

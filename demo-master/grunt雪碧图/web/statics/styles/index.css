@@ -1,0 +1,808 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/* icons */
+.c-Android {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -160px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-Mac {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -20px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-PC {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -120px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-Windows {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -60px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-iOS {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -60px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-more {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-qr {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-addfolder {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -40px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-android {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -30px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-arrow-down {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -20px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-arrow-right {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-blank {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-cancel-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -160px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-cancel-gray {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -100px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-clear {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -80px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-close-20 {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-close-45 {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -45px;
+  width: 45px;
+  height: 45px;
+}
+
+.icon-comment {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -100px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-companybaseinfo {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -80px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-companycustom {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -215px;
+  width: 20px;
+  height: 19px;
+}
+
+.icon-coop {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -120px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-copy {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -100px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-delete {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -50px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-edit-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-edit {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -40px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-excel {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-excelmenu {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -80px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-exe {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px -60px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-favorite {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -70px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-filedown {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-filefav {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -110px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-filelink {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -130px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-filelock {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-fileshare {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-filetag {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-fileunfav {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -215px;
+  width: 19px;
+  height: 19px;
+}
+
+.icon-fileunlock {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -60px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-fileview {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -80px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-folder-coop {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-folder {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-fs {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -140px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-grid {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-group {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -120px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-grouplist {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -40px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-history {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -60px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-html {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px -120px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-ios {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -60px -120px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-iso {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -120px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-link {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -140px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-list {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -160px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-lock {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -175px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-lockstrongbox {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -235px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-log-data-arrow {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -204px;
+  width: 9px;
+  height: 10px;
+}
+
+.icon-log-data-select {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -219px -215px;
+  width: 19px;
+  height: 18px;
+}
+
+.icon-map {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -45px -45px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-max-45 {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -45px 0px;
+  width: 45px;
+  height: 45px;
+}
+
+.icon-min-45 {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px 0px;
+  width: 45px;
+  height: 45px;
+}
+
+.icon-more {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -120px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-moremenu {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -140px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-music {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-pdf {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-pic {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -60px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-ppt {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-pptmenu {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -60px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-preview {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -80px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-property {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -100px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-qrcode {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -30px -150px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-readacl {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px 0px;
+  width: 17px;
+  height: 20px;
+}
+
+.icon-receive {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -160px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-recent {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-recive {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-recycle {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-remove-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-rename {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -40px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-restore-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -60px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-restore-gray {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -80px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-role {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -86px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-search {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -70px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-sendlink {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -140px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-sensitive {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -102px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-setting {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -133px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-share-set-tip {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -118px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-share {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -20px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-small-empty-personal-file {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -150px -120px;
+  width: 30px;
+  height: 25px;
+}
+
+.icon-small-favorite-mask {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px -60px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-small-personal-file {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -150px;
+  width: 30px;
+  height: 25px;
+}
+
+.icon-statistics {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -54px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-strongbox {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-strongboxin {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -140px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-strongboxremove {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -100px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-subscribe {
+  background-image: url(../images/icons-11221108.png);
+  background-position: 0px -215px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-support {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -180px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-tag {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -160px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-tags-delete-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -162px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon-tags-delete-gray {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -148px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon-tags-delete-white-hover {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -176px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon-tags-delete-white {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -190px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon-txt {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -90px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-txtmenu {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -220px -100px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-uploadfile {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -140px -195px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-uploadfolder {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -40px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-uploadnew {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -200px -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-user-blue {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -20px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-user-gray {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -37px;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-user-img-down-arrow {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -240px -214px;
+  width: 10px;
+  height: 6px;
+}
+
+.icon-video {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -30px -120px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-word {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -90px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-wordmenu {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -180px -40px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-zip {
+  background-image: url(../images/icons-11221108.png);
+  background-position: -120px -60px;
+  width: 30px;
+  height: 30px;
+}
