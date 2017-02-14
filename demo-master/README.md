@@ -19,3 +19,5 @@
 * 使用了cheerio爬虫爬取了美女图片作为静态资源
 * 使用了express,jquery,fancybox,bootstrap框架
 * 通过修改fancybox源码支持2进制图片预览
+
+## svn密码破解 ##

@@ -9,6 +9,7 @@
     *  uglify.js 兼容ie8及以下的配置写法
     *  grunt雪碧图打包
     *  express,cheerio的web相册实现
+    *  svn密码破解
 
 ## tools 好用工具
 
