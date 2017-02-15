@@ -10,6 +10,7 @@
     *  grunt雪碧图打包
     *  express,cheerio的web相册实现
     *  svn密码破解
+    *  node建站
 
 ## tools 好用工具
 
@@ -17,5 +18,3 @@
     * Calipers量取尺寸
     * EclipsePalette取色
     * markdownpad2,markdown编辑器 
-
-迁移
